@@ -1,0 +1,56 @@
+<div class="movie-card">
+    <div class="color-overlay">
+
+        <div class="movie-content">
+            <div class="movie-header">
+                <h1 class="movie-title">{{ (movies?.movie_title.length>10)? (movies?.movie_title | slice:0:6)+'..':(movies?.movie_title) }}</h1>
+                <h4 class="movie-info">({{movies?.title_year}}) Directed By- {{movies?.director_name}}</h4>
+            </div>
+
+            <table>
+                <tr>
+                    <td> Actors- </td>
+                    <td>{{movies?.actor_1_name}} , {{movies.actor_2_name}}</td>
+                </tr>
+
+                <tr>
+                    <td> Language- </td>
+                    <td>{{movies?.language}}</td>
+                </tr>
+
+                <tr>
+                    <td> Country- </td>
+                    <td>{{movies?.country}}</td>
+                </tr>
+
+                <tr>
+                    <td>  Rating- </td>
+                    <td>{{movies?.content_rating}}</td>
+                </tr>
+
+                <tr>
+                    <td> Budget - </td>
+                    <td>{{movies?.budget}}</td>
+                </tr>
+
+                <tr>
+                        <td> Imdb Link - </td>
+                        <td><a href={{movies?.movie_imdb_link}} target="_blank">{{movies?.movie_imdb_link}}</a></td>
+                    </tr>
+            </table>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
